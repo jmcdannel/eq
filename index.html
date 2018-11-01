@@ -15,32 +15,34 @@
 	<svg preserveAspectRatio="none" id="visualizer" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<defs>
 
-				<mask id="mask">
-						<g id="eq-bars"></g>
-						<g id="eq-peaks"></g>
-				</mask>
-				<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-					<stop offset="0%" style="stop-color:#ff0a0a;stop-opacity:1" />
-					<stop offset="25%" style="stop-color:#ff580a;stop-opacity:1" />
-					<stop offset="75%" style="stop-color:#fff129;stop-opacity:1" />
-					<stop offset="85%" style="stop-color:#15b300;stop-opacity:1" />
-					<stop offset="100%" style="stop-color:#15b300;stop-opacity:1" />
-					<!-- <stop offset="0%" style="stop-color:#ff0a0a;stop-opacity:1" />
-					<stop offset="20%" style="stop-color:#ff640a;stop-opacity:1" />
-					<stop offset="90%" style="stop-color:#fff129;stop-opacity:1" />
-					<stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" /> -->
-				</linearGradient>
+			<mask id="mask">
+					<g id="eq-bands"></g>
+					<g id="eq-peaks"></g>
+			</mask>
+			<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+				<stop offset="0%" style="stop-color:#ff0a0a;stop-opacity:1" />
+				<stop offset="25%" style="stop-color:#ff580a;stop-opacity:1" />
+				<stop offset="75%" style="stop-color:#fff129;stop-opacity:1" />
+				<stop offset="85%" style="stop-color:#15b300;stop-opacity:1" />
+				<stop offset="100%" style="stop-color:#15b300;stop-opacity:1" />
+				<!-- <stop offset="0%" style="stop-color:#ff0a0a;stop-opacity:1" />
+				<stop offset="20%" style="stop-color:#ff640a;stop-opacity:1" />
+				<stop offset="90%" style="stop-color:#fff129;stop-opacity:1" />
+				<stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" /> -->
+			</linearGradient>
 		</defs>
 		<rect x="0" y="0" width="100%" height="98%" fill="url(#gradient)" mask="url(#mask)"></rect>
-		<!-- <rect x="0" y="95%" width="100%" height="5%" style="fill: green;">
-			
-			
-			
-		</rect> -->
 		<g id="eq-labels"></g>
-		
 	</svg>
+	<!--
+	<Spectrum theme="" source="" />
+	<Spectrum theme="classic-peaks" source="mic" />
+	<Spectrum config="{ ... }" className="retro" ui="standard" source="spotify:[spotifyUrl" />
+	<Spectrum config="{ ... }" className="retro" ui="standard" source="spotify:[spotifyUrl" />
+
+	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
-	<script src="eq.js"></script>
+	<script type="module" src="standardEQ.js"></script>
+	<script type="module" src="eq.js"></script>
 </body>
 </html>
